@@ -32,8 +32,8 @@ module.exports = createReactClass({
         }),
         query: PropTypes.string,
         verboseShowOriginal: PropTypes.bool,
-        showRootLabel: React.PropTypes.bool,
-        rootLabel: React.PropTypes.string,
+        showRootLabel: PropTypes.bool,
+        rootLabel: PropTypes.string,
     },
     getDefaultProps: function() {
         return {
