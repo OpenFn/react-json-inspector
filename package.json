@@ -1,6 +1,6 @@
 {
   "name": "react-json-inspector",
-  "version": "7.1.1",
+  "version": "7.2.0",
   "description": "React JSON inspector component",
   "main": "json-inspector.js",
   "author": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Lapple/react-json-inspector.git"
+    "url": "git://github.com/openfn/react-json-inspector.git"
   },
   "license": "MIT",
   "dependencies": {

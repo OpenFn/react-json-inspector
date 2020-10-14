@@ -31,7 +31,9 @@ module.exports = createReactClass({
             ignoreCase: PropTypes.bool
         }),
         query: PropTypes.string,
-        verboseShowOriginal: PropTypes.bool
+        verboseShowOriginal: PropTypes.bool,
+        showRootLabel: React.PropTypes.bool,
+        rootLabel: React.PropTypes.string,
     },
     getDefaultProps: function() {
         return {
@@ -60,7 +62,10 @@ module.exports = createReactClass({
             isExpanded: function(keypath, value) {
                 return false;
             },
-            verboseShowOriginal: false
+            verboseShowOriginal: false,
+            rootExpanded: true,
+            showRootLabel: true,
+            rootLabel: 'root',
         };
     },
     getInitialState: function() {
@@ -106,8 +111,9 @@ module.exports = createReactClass({
                                 ) :
                                 null
                         ),
-                        label: 'root',
+                        label: p.rootLabel,
                         root: true,
+                        showRootLabel: p.showRootLabel,
                         isExpanded: p.isExpanded,
                         interactiveLabel: p.interactiveLabel,
                         verboseShowOriginal: p.verboseShowOriginal
